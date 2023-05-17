@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CEP Search</title>
+</head>
+<body>
+    <h1>
+        Informações sobre {{ cep['cep'] }}
+    </h1>
+    <p>
+        Rua/Logradouro: {{ cep['logradouro'] }}
+    </p>
+    <p>
+        Complemento: {{ cep['complemento'] }}
+    </p>
+    <p>
+        Bairro: {{ cep['bairro'] }}
+    </p>
+    <p>
+        Cidade: {{ cep['localidade'] }}
+    </p>
+    <p>
+        Estado: {{ cep['uf'] }}
+    </p>
+    <p>
+        DDD do estado: {{ cep['ddd'] }}
+    </p>
+</body>
+</html>
