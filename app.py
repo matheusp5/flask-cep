@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route('/<cep>')
-def hello_world(cep):  # put application's code here
+def CEP(cep):
     cepReq = get(f"https://viacep.com.br/ws/{cep}/json/").json()
     return render_template("Home.html",cep=cepReq)
 
